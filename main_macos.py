@@ -35,7 +35,7 @@ class PingSpeedDisplay(QLabel):
         try:
             # AppleScript to get the URL from browser
             script = """
-            tell application "put your browser name"
+            tell application "Browser Name"
                 if (count of windows) > 0 then
                     set currentTab to active tab of front window
                     set currentUrl to URL of currentTab
